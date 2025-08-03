@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <circle cx="12" cy="12" r="10" fill="#ff4757"/>
+                        <path d="M8 12h8M12 8v8" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <h1 class="logo-text">Extensions</h1>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="settings-btn">
+                    <svg viewBox="0 0 24 24" width="20" height="20">
+                        <path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/>
+                        <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">Extensions List</h2>
+                <div class="filter-tabs">
+                    <button class="tab-btn active">All</button>
+                    <button class="tab-btn">Active</button>
+                    <button class="tab-btn">Inactive</button>
+                </div>
+            </div>
+
+            <!-- Extensions Grid -->
+            <div class="extensions-grid">
+                <!-- DevLens -->
+                <div class="extension-card">
+                    <div class="extension-header">
+                        <div class="extension-icon" style="background-color: #a8e6cf;">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <rect x="3" y="3" width="18" height="18" rx="2" fill="#2d3748"/>
+                                <path d="M8 7h8M8 11h6M8 15h4" stroke="white" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="extension-info">
+                            <h3 class="extension-name">DevLens</h3>
+                            <p class="extension-description">Quickly inspect page layouts and visualize element boundaries.</p>
+                        </div>
+                    </div>
+                    <div class="extension-actions">
+                        <button class="remove-btn">Remove</button>
+                        <div class="toggle-switch active">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- StyleSpy -->
+                <div class="extension-card">
+                    <div class="extension-header">
+                        <div class="extension-icon" style="background-color: #87ceeb;">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <rect x="4" y="4" width="16" height="16" rx="2" fill="#2d3748"/>
+                                <path d="M8 8h8M8 12h6M8 16h4" stroke="white" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="extension-info">
+                            <h3 class="extension-name">StyleSpy</h3>
+                            <p class="extension-description">Instantly analyze and copy CSS from any webpage element.</p>
+                        </div>
+                    </div>
+                    <div class="extension-actions">
+                        <button class="remove-btn">Remove</button>
+                        <div class="toggle-switch active">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SpeedBoost -->
+                <div class="extension-card">
+                    <div class="extension-header">
+                        <div class="extension-icon" style="background-color: #f8b2c4;">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <circle cx="12" cy="12" r="8" fill="#2d3748"/>
+                                <path d="M12 6v6l4 2" stroke="white" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="extension-info">
+                            <h3 class="extension-name">SpeedBoost</h3>
+                            <p class="extension-description">Optimizes browser resource usage to accelerate page loading.</p>
+                        </div>
+                    </div>
+                    <div class="extension-actions">
+                        <button class="remove-btn">Remove</button>
+                        <div class="toggle-switch">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JSONWizard -->
+                <div class="extension-card">
+                    <div class="extension-header">
+                        <div class="extension-icon" style="background-color: #dda0dd;">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M7 8l-4 4 4 4M17 8l4 4-4 4M14 4l-4 16" stroke="#2d3748" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="extension-info">
+                            <h3 class="extension-name">JSONWizard</h3>
+                            <p class="extension-description">Formats, validates, and prettifies JSON responses in-browser.</p>
+                        </div>
+                    </div>
+                    <div class="extension-actions">
+                        <button class="remove-btn">Remove</button>
+                        <div class="toggle-switch active">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TabMaster Pro -->
+                <div class="extension-card">
+                    <div class="extension-header">
+                        <div class="extension-icon" style="background-color: #dda0dd;">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <rect x="3" y="6" width="18" height="12" rx="2" fill="#2d3748"/>
+                                <path d="M7 10h10M7 14h6" stroke="white" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="extension-info">
+                            <h3 class="extension-name">TabMaster Pro</h3>
+                            <p class="extension-description">Organizes browser tabs into groups and sessions.</p>
+                        </div>
+                    </div>
+                    <div class="extension-actions">
+                        <button class="remove-btn">Remove</button>
+                        <div class="toggle-switch active">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ViewportBuddy -->
+                <div class="extension-card">
+                    <div class="extension-header">
+                        <div class="extension-icon" style="background-color: #87ceeb;">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <rect x="2" y="4" width="20" height="16" rx="2" fill="#2d3748"/>
+                                <path d="M8 8h8M8 12h6" stroke="white" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="extension-info">
+                            <h3 class="extension-name">ViewportBuddy</h3>
+                            <p class="extension-description">Simulates various screen resolutions directly within the browser.</p>
+                        </div>
+                    </div>
+                    <div class="extension-actions">
+                        <button class="remove-btn">Remove</button>
+                        <div class="toggle-switch">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Markup Notes -->
+                <div class="extension-card">
+                    <div class="extension-header">
+                        <div class="extension-icon" style="background-color: #a8e6cf;">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" fill="#2d3748"/>
+                                <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="white" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="extension-info">
+                            <h3 class="extension-name">Markup Notes</h3>
+                            <p class="extension-description">Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+                        </div>
+                    </div>
+                    <div class="extension-actions">
+                        <button class="remove-btn">Remove</button>
+                        <div class="toggle-switch active">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GridGuides -->
+                <div class="extension-card">
+                    <div class="extension-header">
+                        <div class="extension-icon" style="background-color: #dda0dd;">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <rect x="3" y="3" width="6" height="6" fill="#2d3748"/>
+                                <rect x="15" y="3" width="6" height="6" fill="#2d3748"/>
+                                <rect x="3" y="15" width="6" height="6" fill="#2d3748"/>
+                                <rect x="15" y="15" width="6" height="6" fill="#2d3748"/>
+                            </svg>
+                        </div>
+                        <div class="extension-info">
+                            <h3 class="extension-name">GridGuides</h3>
+                            <p class="extension-description">Overlay customizable grids and alignment guides on any webpage.</p>
+                        </div>
+                    </div>
+                    <div class="extension-actions">
+                        <button class="remove-btn">Remove</button>
+                        <div class="toggle-switch">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Palette Picker -->
+                <div class="extension-card">
+                    <div class="extension-header">
+                        <div class="extension-icon" style="background-color: #98fb98;">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <circle cx="12" cy="12" r="10" fill="#2d3748"/>
+                                <circle cx="8" cy="8" r="2" fill="#ff6b6b"/>
+                                <circle cx="16" cy="8" r="2" fill="#4ecdc4"/>
+                                <circle cx="8" cy="16" r="2" fill="#45b7d1"/>
+                                <circle cx="16" cy="16" r="2" fill="#f9ca24"/>
+                            </svg>
+                        </div>
+                        <div class="extension-info">
+                            <h3 class="extension-name">Palette Picker</h3>
+                            <p class="extension-description">Instantly extracts color palettes from any webpage.</p>
+                        </div>
+                    </div>
+                    <div class="extension-actions">
+                        <button class="remove-btn">Remove</button>
+                        <div class="toggle-switch active">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LinkChecker -->
+                <div class="extension-card">
+                    <div class="extension-header">
+                        <div class="extension-icon" style="background-color: #ffd93d;">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" stroke="#2d3748" stroke-width="2" fill="none"/>
+                                <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" stroke="#2d3748" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="extension-info">
+                            <h3 class="extension-name">LinkChecker</h3>
+                            <p class="extension-description">Scans and highlights broken links on any page.</p>
+                        </div>
+                    </div>
+                    <div class="extension-actions">
+                        <button class="remove-btn">Remove</button>
+                        <div class="toggle-switch active">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DOM Snapshot -->
+                <div class="extension-card">
+                    <div class="extension-header">
+                        <div class="extension-icon" style="background-color: #87ceeb;">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <rect x="3" y="3" width="18" height="18" rx="2" fill="#2d3748"/>
+                                <circle cx="12" cy="12" r="3" stroke="white" stroke-width="2" fill="none"/>
+                                <path d="M12 1v6M23 12h-6M12 23v-6M1 12h6" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="extension-info">
+                            <h3 class="extension-name">DOM Snapshot</h3>
+                            <p class="extension-description">Capture and export DOM structures quickly.</p>
+                        </div>
+                    </div>
+                    <div class="extension-actions">
+                        <button class="remove-btn">Remove</button>
+                        <div class="toggle-switch">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ConsolePlus -->
+                <div class="extension-card">
+                    <div class="extension-header">
+                        <div class="extension-icon" style="background-color: #98fb98;">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <rect x="2" y="3" width="20" height="14" rx="2" fill="#2d3748"/>
+                                <path d="M7 8l3 3-3 3M13 14h4" stroke="#00ff00" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="extension-info">
+                            <h3 class="extension-name">ConsolePlus</h3>
+                            <p class="extension-description">Enhanced developer console with advanced filtering and logging.</p>
+                        </div>
+                    </div>
+                    <div class="extension-actions">
+                        <button class="remove-btn">Remove</button>
+                        <div class="toggle-switch active">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
